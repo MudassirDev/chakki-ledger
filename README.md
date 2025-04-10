@@ -32,3 +32,6 @@ To run this project locally:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/MudassirDev/chakki-ledger.git
+2. **Run development server**:
+    ```bash
+    python3 server.py
