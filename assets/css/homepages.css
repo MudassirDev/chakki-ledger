@@ -1,0 +1,344 @@
+.total-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.total-details .container {
+    flex-grow: 1;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--brand-color);
+    cursor: pointer;
+    transition: all .2s;
+    color: hsl(var(--white));
+}
+
+.total-details .container:hover {
+    box-shadow: 0px 0px 10px white;
+    scale: 1.01;
+}
+
+.complete-data {
+    padding-top: 50px;
+}
+
+.complete-data .data-table {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #353535;
+}
+
+.complete-data .data-table .row {
+    display: grid;
+    grid-template-columns: 100px repeat(5, 1fr) 150px;
+    align-items: center;
+    border-bottom: 1px solid #353535;
+    padding: 8px;
+}
+
+.complete-data .data-table .row p {
+    border-right: 1px solid #353535;
+    padding: 8px;
+}
+
+.complete-data .data-table .row p:last-child {
+    border-right: none;
+}
+
+.complete-data .data-table .row p .label {
+    display: none;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .complete-data .data-table .row.head {
+        display: none;
+    }
+
+    .complete-data .data-table .row {
+        grid-template-columns: 1fr;
+        font-size: 14px;
+    }
+
+    .complete-data .data-table .row p {
+        padding: 4px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .complete-data .data-table .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+        border-bottom: 1px solid #353535;
+    }
+
+    .complete-data .data-table .row p {
+        display: flex;
+        width: 100%;
+        padding: 4px 0;
+        border-bottom: 1px solid #353535;
+        justify-content: space-between;
+    }
+
+    .complete-data .data-table .row p .label {
+        display: inline;
+        font-weight: bold;
+        color: #999;
+    }
+
+    .complete-data .data-table .row p:last-child {
+        border-bottom: none;
+    }
+
+    .complete-data .data-table .row p:last-child button {
+        margin-left: auto;
+    }
+}
+
+.filter-sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: black;
+    width: 400px;
+    z-index: 2;
+    transform: translate(-400px);
+    transition: all .2s;
+}
+
+.complete-data .data-controls {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 10px;
+}
+
+.filter-button {
+    padding: 8px 16px;
+    background-color: var(--brand-color);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    transition: all .2s;
+}
+
+.filter-button:active,
+.filter-button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.filter-button:hover {
+    background-color: #e37155;
+}
+
+.filter-sidebar .head {
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-sidebar .body {
+    padding-top: 20px;
+}
+
+.filter-sidebar .body .category {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.filter-sidebar .body .category .filters {
+    padding-left: 20px;
+    height: 0px;
+    overflow: hidden;
+    transition: all .2s;
+    transform: translate(-100vw, 0);
+}
+
+.filter-sidebar .body .category .filters .filter.timeline {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 45% 10% 45%;
+    text-align: center;
+}
+
+input:focus,
+input:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+span[name="customer"] {
+    text-transform: capitalize;
+}
+
+/* invoice */
+
+.inv-title {
+    padding: 10px;
+    border: 1px solid silver;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inv-logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* header */
+.inv-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inv-header> :nth-child(1) {
+    flex: 2;
+}
+
+.inv-header> :nth-child(2) {
+    flex: 1;
+}
+
+.inv-header h2 {
+    font-size: 20px;
+    margin: 0 0 0.3rem 0;
+    text-transform: capitalize;
+}
+
+.inv-header ul li {
+    font-size: 15px;
+    padding: 3px 0;
+}
+
+/* body */
+.inv-body table th,
+.inv-body table td {
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.inv-body {
+    margin-bottom: 30px;
+}
+
+/* footer */
+.inv-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.inv-footer> :nth-child(1) {
+    flex: 2;
+}
+
+.inv-footer> :nth-child(2) {
+    flex: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .8;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.invoice-popup-main-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    z-index: 2;
+}
+
+.invoice-popup-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    overflow: auto;
+    padding: 20px 0;
+}
+
+.invoice-container {
+    padding: 20px;
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+}
+
+.inv-actions {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+table th,
+table td {
+    border: 1px solid silver;
+}
+
+table th,
+table td {
+    text-align: right;
+    padding: 8px;
+}
+
+#paid-input::-webkit-inner-spin-button, 
+#paid-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#paid-input {
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Modern browsers */
+    border: none;
+    outline: none;
+    text-align: right;
+    color: inherit;
+    font-weight: 600;
+}
