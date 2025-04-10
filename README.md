@@ -1,6 +1,6 @@
-# Chakki Learning – Finance Management Tool
+# Chakki Ledger – Finance Management Tool
 
-**Chakki Learning** is a finance management application developed to assist small businesses, particularly those dealing with permanent customers, in managing their orders and finances efficiently. This tool was specifically created for a wheat grain business to streamline their financial operations.
+**Chakki Ledger** is a finance management application developed to assist small businesses, particularly those dealing with permanent customers, in managing their orders and finances efficiently. This tool was specifically created for a wheat grain business to streamline their financial operations.
 
 ## 🌟 Features
 
@@ -17,7 +17,7 @@
 
 ## 🎯 Motivation
 
-The need for a tailored finance management solution arose when a friend required a system to handle their wheat grain business's finances. Existing solutions were either too complex or didn't cater to their specific needs, prompting the development of Chakki Learning.
+The need for a tailored finance management solution arose when a friend required a system to handle their wheat grain business's finances. Existing solutions were either too complex or didn't cater to their specific needs, prompting the development of Chakki Ledger.
 
 ## 🛠️ Technologies Used
 
