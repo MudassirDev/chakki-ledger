@@ -10,7 +10,7 @@
     - Manage orders: create, update, and delete.
     - Download receipts for orders.
   - **User**:
-    - View orders associated with their profile.
+    - View orders (for now the users can view all orders, but specific order viewing is something I might work on in the future).
     - Download receipts for their orders.
 
 - **Receipt Generation**: Easily download receipts for record-keeping and customer communication.
